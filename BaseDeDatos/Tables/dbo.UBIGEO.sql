@@ -1,0 +1,10 @@
+CREATE TABLE [dbo].[UBIGEO]
+(
+[CODUBI] [char] (6) COLLATE Modern_Spanish_CI_AS NOT NULL,
+[DEPA] [varchar] (30) COLLATE Modern_Spanish_CI_AS NOT NULL,
+[PROV] [varchar] (30) COLLATE Modern_Spanish_CI_AS NOT NULL,
+[DIST] [varchar] (30) COLLATE Modern_Spanish_CI_AS NOT NULL
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[UBIGEO] ADD CONSTRAINT [UBIGEO_pk] PRIMARY KEY CLUSTERED ([CODUBI]) ON [PRIMARY]
+GO
